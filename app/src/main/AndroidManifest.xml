@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edevstudios.driverstandings">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CarActivity">
+        </activity>
+        <activity android:name=".AllCarsActivity">
+        </activity>
+        <activity android:name=".DriverActivity">
+        </activity>
+        <activity android:name=".AllDriverActivity">
+        </activity>
+        <activity android:name=".DriverUpdateActivity">
+        </activity>
+        <activity android:name=".EngineActivity">
+        </activity>
+        <activity android:name=".AllEnginesActivity">
+        </activity>
+        <activity android:name=".RacesActivity">
+        </activity>
+        <activity android:name=".LeaderboardActivity">
+        </activity>
+        <activity android:name=".SponsorActivity">
+        </activity>
+        <activity android:name=".StandingsActivity">
+        </activity>
+        <activity android:name=".TrackActivity">
+        </activity>
+        <activity android:name=".AllTracksActivity">
+        </activity>
+        <service android:name = ".services.Impl.ActivateIntentService"/>
+    </application>
+</manifest>
